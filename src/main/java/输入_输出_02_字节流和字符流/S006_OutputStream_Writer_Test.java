@@ -18,7 +18,7 @@ import java.io.InputStream;
  * 		2.void write(char[] b,int off,int len)：从off开始，将b中的len个字符写入输出流
  * 		
  */
-public class S006_FileOutputStreamTest {
+public class S006_OutputStream_Writer_Test {
 	public static void main(String[] args){
 		try {
 			InputStream fis = new FileInputStream("src/main/java/输入_输出_01_File类/S006_FileOutputStreamTest.java");
