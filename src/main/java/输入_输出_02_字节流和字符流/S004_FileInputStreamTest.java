@@ -1,10 +1,10 @@
-package 输入_输出_01_File类;
+package 输入_输出_02_字节流和字符流;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
 
 /**
- * InputStream和Reader
+ * InputStream
  * @author Eric_Junior
  * 创建时间：2018年4月26日
  * 
@@ -19,13 +19,15 @@ import java.io.InputStream;
  */
 public class S004_FileInputStreamTest {
 	public static void main(String[] args) throws Exception{
-		InputStream fis = new FileInputStream("输入_输出_01_File类/S004_FileInputStreamTest.java");
+		InputStream fis = new FileInputStream("src/main/java/输入_输出_01_File类/S004_FileInputStreamTest.java");
 		// 缓冲区
 		byte[] buff = new byte[1024];
 		// 实际读取的字节数
 		int hasRead = 0;
 		while((hasRead = fis.read(buff)) != -1) {
-			System.out.println(new String(buff, 0, hasRead));
+			System.out.print(new String(buff, 0, hasRead));
 		}
+		// 关闭文件输入流，放在finally块中更安全
+		fis.close();
 	}
 }

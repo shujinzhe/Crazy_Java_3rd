@@ -1,4 +1,4 @@
-package 输入_输出_01_File类;
+package 输入_输出_02_字节流和字符流;
 /**
  * Java_IO流
  * @author Eric_Junior
