@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * File类，访问文件与目录
+ * 使用File类访问本地文件与目录
  * @author Eric_Junior
  * 创建时间：2017年9月22日
  * 
